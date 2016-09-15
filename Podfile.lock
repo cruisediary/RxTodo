@@ -1,0 +1,62 @@
+PODS:
+  - CGFloatLiteral (0.2.0)
+  - ManualLayout (1.2.1)
+  - ReusableKit (1.0.0)
+  - RxCocoa (3.0.0-beta.1):
+    - RxSwift (~> 3.0.0-beta.1)
+  - RxDataSources (1.0.0-beta.2):
+    - RxCocoa (~> 3.0.0-beta.1)
+    - RxSwift (~> 3.0.0-beta.1)
+  - RxExpect (0.1.2):
+    - RxCocoa (~> 3.0.0-beta.1)
+    - RxSwift (~> 3.0.0-beta.1)
+    - RxTests (~> 3.0.0-beta.1)
+  - RxSwift (3.0.0-beta.1)
+  - RxTests (3.0.0-beta.1):
+    - RxSwift (~> 3.0.0-beta.1)
+  - SnapKit (3.0.0)
+  - Then (2.0.0)
+
+DEPENDENCIES:
+  - CGFloatLiteral (= 0.2.0)
+  - ManualLayout (from `https://github.com/devxoul/ManualLayout`, branch `swift-3.0`)
+  - ReusableKit (= 1.0.0)
+  - RxCocoa (~> 3.0.0-beta.1)
+  - RxDataSources (~> 1.0.0-beta.2)
+  - RxExpect (from `https://github.com/devxoul/RxExpect`, branch `swift-3.0`)
+  - RxSwift (~> 3.0.0-beta.1)
+  - RxTests (~> 3.0.0-beta.1)
+  - SnapKit (= 3.0.0)
+  - Then (= 2.0.0)
+
+EXTERNAL SOURCES:
+  ManualLayout:
+    :branch: swift-3.0
+    :git: https://github.com/devxoul/ManualLayout
+  RxExpect:
+    :branch: swift-3.0
+    :git: https://github.com/devxoul/RxExpect
+
+CHECKOUT OPTIONS:
+  ManualLayout:
+    :commit: c8b04c6f5a6d3b89438e43549dcfb92bfc2f81ba
+    :git: https://github.com/devxoul/ManualLayout
+  RxExpect:
+    :commit: 2c371882912ac29bc1d238fd960814d85d9e0bfb
+    :git: https://github.com/devxoul/RxExpect
+
+SPEC CHECKSUMS:
+  CGFloatLiteral: 5bdcd81cb54b56cd71c4e5e66a33cb86cd51ecbf
+  ManualLayout: 7326e29d60370c9fdfa41338f87f0b0ae350bf54
+  ReusableKit: 236864f798e5a75111f7cfdccf85a859c7d31125
+  RxCocoa: 8cecf331302b8ae5381bbab1bccba4ede2eae6a8
+  RxDataSources: 1cd87dc97fd46be002942eb1dcb1b432535141dd
+  RxExpect: c3f596315b1f55ab20374373b59752dab9d2b928
+  RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
+  RxTests: 819cbca750007349f03cfdb89bc07d412f67ab96
+  SnapKit: 98af0a4e9369d3c58f758967518081dbdc7eb1d9
+  Then: 460074ffe907de3536d5e88f189dac5ef7cf0869
+
+PODFILE CHECKSUM: d04e6218eb5398c3e2ee6255c2aa8d14bcbae9a7
+
+COCOAPODS: 1.0.1

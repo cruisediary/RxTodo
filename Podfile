@@ -4,23 +4,32 @@ target 'RxTodo' do
   use_frameworks!
 
   # Rx
-  pod 'RxSwift', '2.6.0'
-  pod 'RxCocoa', '2.6.0'
-  pod 'RxDataSources', '0.8.1'
+  pod 'RxSwift', '~> 3.0.0-beta.1'
+  pod 'RxCocoa', '~> 3.0.0-beta.1'
+  pod 'RxDataSources', '~> 1.0.0-beta.2'
 
   # UI
-  pod 'SnapKit', '0.21.1'
-  pod 'ManualLayout', '1.2.1'
+  pod 'SnapKit', '3.0.0'
+  pod 'ManualLayout', :git => 'https://github.com/devxoul/ManualLayout', :branch => 'swift-3.0'
 
   # Misc.
-  pod 'Then', '1.0.3'
-  pod 'ReusableKit', '0.3.0'
-  pod 'CGFloatLiteral', '0.1.0'
+  pod 'Then', '2.0.0'
+  pod 'ReusableKit', '1.0.0'
+  pod 'CGFloatLiteral', '0.2.0'
 
   # Testing
   target 'RxTodoTests' do
-    pod 'RxTests', '~> 2.6'
-    pod 'RxExpect', '~> 0.1'
+    pod 'RxTests', '~> 3.0.0-beta.1'
+    pod 'RxExpect', :git => 'https://github.com/devxoul/RxExpect', :branch => 'swift-3.0'
   end
 
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '3.0'
+      config.build_settings['MACOSX_DEPLOYMENT_TARGET'] = '10.10'
+    end
+  end
 end
